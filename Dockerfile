@@ -1,5 +1,4 @@
 FROM openjdk:8
 WORKDIR /app
-ADD ./target/*.jar /app.jar
-EXPOSE 3000
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY ./target/*.jar /app/app.jar
+ENTRYPOINT ["java","-jar","/app/app.jar"]
