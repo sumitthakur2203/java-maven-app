@@ -13,7 +13,7 @@ spec:
         app: java-kubernetes
     spec:
       containers:
-        - name: java-k8s
+        - name: java-kubernetes
           image: javatechie/devops-integration # Image that will be used to containers in the cluster
           imagePullPolicy: IfNotPresent
           ports:
