@@ -1,21 +1,21 @@
 apiVersion: apps/v1
-kind: Deployment # Kubernetes resource kind we are creating
+kind: Deployment
 metadata:
   name: java-deployment
 spec:
   selector:
     matchLabels:
       app: java-kubernetes
-  replicas: 2 # Number of replicas that will be created for this deployment
+  replicas: 2 
   template:
     metadata:
       labels:
         app: java-kubernetes
     spec:
       containers:
-        - name: java-kubernetes
-          image: europe-west1-docker.pkg.dev/peak-axiom-426310-b1/jenkins-image-repo/my-app2 # Image that will be used to containers in the cluster
-          imagePullPolicy: IfNotPresent
-          ports:
-            - containerPort: 8080 # The port that the container is running on in the cluster
- ---
+      - name: java-kubernetes
+        image: europe-west1-docker.pkg.dev/peak-axiom-426310-b1/jenkins-image-repo/my-app2 
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8080 
+
