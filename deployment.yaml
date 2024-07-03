@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: java-k8s
+      app: java-kubernetes
   replicas: 2 # Number of replicas that will be created for this deployment
   template:
     metadata:
