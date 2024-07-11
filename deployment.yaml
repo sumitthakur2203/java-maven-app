@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: java-kubernetes
-        image: europe-west1-docker.pkg.dev/peak-axiom-426310-b1/jenkins-image-repo/my-app2 
+        image: europe-west1-docker.pkg.dev/maximal-boulder-429006-v4/jenkins-repo/my-app2 
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080 
